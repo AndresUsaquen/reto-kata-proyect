@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.mycompany.retokata2;
 
 import java.util.ArrayList;
@@ -10,10 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- *
- * @author elian
- */
+
 public class Principal {
 public static void main(String[] args) {
 
@@ -31,12 +24,12 @@ public static void main(String[] args) {
             case 1:
                 // Crear la lista y definir el valor de S
                 List<Integer> listaDesafioUno = Arrays.asList(60, 6, 5, 4, 3, 2, 7, 7, 29, 1);
-                int S = 6;
+                int S = 2;
                 // Llamar al método desafioUno
                 desafioUno(listaDesafioUno, S);
                 break;
             case 2:
-                S = 6;
+                S = 2;
                 int[] arrayPrueba = {1, 2, 3, 5, 6, 8, 9};
                 desafioDos(arrayPrueba, S);
                 break;
@@ -53,6 +46,7 @@ public static void main(String[] args) {
     }
 
     public static void desafioUno(List<Integer> lista, int S) {
+        System.out.println("Dado un número S y una lista de números,eliminar los DIGITOS que son mayores o iguales a S y traer una nueva lista");
         System.out.println("Lista inicial : " + lista);
         List<Integer> nuevaLista = new ArrayList<>();
 
@@ -92,7 +86,7 @@ public static void main(String[] args) {
 
         ArrayList<Integer> resultado = new ArrayList<>();
         int izquierda = 0, derecha = array.length - 1;
-
+System.out.println("Lista inicial: "+Arrays.toString(array));
         while (izquierda <= derecha) {
             System.out.println("\n mientras posición " + izquierda + " sea <= posición " + derecha);
 
